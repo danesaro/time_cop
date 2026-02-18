@@ -1,0 +1,24 @@
+# Core
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-telegram-bot[webhooks]==21.9
+
+# Database
+asyncpg==0.30.0
+
+# AI
+google-generativeai==0.8.4
+
+# Reports
+openpyxl==3.1.5
+
+# Config & Utils
+pydantic-settings==2.7.1
+pydantic==2.10.5
+tenacity==9.0.0
+pytz==2024.2
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.2
+httpx==0.28.1
