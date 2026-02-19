@@ -2,7 +2,7 @@
 fastapi==0.115.6
 gunicorn==22.0.0
 uvicorn[standard]==0.34.0
-python-telegram-bot[webhooks]==21.9
+python-telegram-bot[webhooks,job-queue]==21.9
 
 # Database
 asyncpg==0.30.0

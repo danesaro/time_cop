@@ -133,6 +133,12 @@ app.add_middleware(
 
 # ── Endpoints ────────────────────────────────────────────────────────────────
 
+@app.get("/")
+async def root() -> dict:
+    """Root endpoint to satisfy health checks."""
+    return {"message": "Time Cop API is running", "status": "ok"}
+
+
 @app.get("/health")
 async def health_check() -> dict:
     """Health check endpoint for readiness probes."""
