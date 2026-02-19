@@ -21,7 +21,7 @@ Analiza el siguiente texto y extrae TODAS las actividades mencionadas. Para cada
 - Descripción profesional y clara
 - Proyecto asociado (infiere del contexto)
 - Categoría: 'proyectoFacturable', 'proyectoNoFacturable', 'otrosNoFacturable'
-- Horas estimadas (si no está explícito, estima razonablemente, un día debe tener 8 horas de actividades)
+- Horas estimadas (si no está explícito, estima razonablemente, un día debe tener OBLIGATORIAMENTE 8 horas de actividades)
 
 RESPONDE ÚNICAMENTE con un JSON válido:
 {
