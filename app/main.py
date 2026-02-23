@@ -101,9 +101,7 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down Time Cop...")
 
     if bot_app:
-        if cfg.is_webhook_mode:
-            await bot_app.bot.delete_webhook()
-        else:
+        if not cfg.is_webhook_mode:
             await bot_app.updater.stop()
         await bot_app.stop()
         await bot_app.shutdown()
